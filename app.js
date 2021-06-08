@@ -35,3 +35,19 @@ class Media {
         this._ratings.push(newRating);
     }
 }
+
+class Book extends Media {
+    constructor(author, title, pages) {
+      super(title)
+      this._author = author;
+      this._pages = pages;
+    }
+  
+    get author() {
+      return this.author;
+    }
+  
+    get pages() {
+      return this.pages;
+    }
+  }
