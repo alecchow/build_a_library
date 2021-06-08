@@ -20,3 +20,9 @@ class Media {
     get ratings() {
         return this._ratings;
     }
+
+    getAverageRating() {
+        let sum = this._ratings.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        const n = this._ratings.length;
+        return sum/n;
+    }
