@@ -82,4 +82,6 @@ historyOfEverything.addRating(5);
 
 historyOfEverything.addRating(5);
 
-console.log(historyOfEverything.ratings)
+console.log(historyOfEverything.ratings);
+
+console.log(historyOfEverything.getAverageRating());
