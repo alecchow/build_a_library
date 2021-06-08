@@ -75,3 +75,11 @@ const historyOfEverything = new Book('Bill Bryson', 'A Short History of Nearly E
 historyOfEverything.toggleCheckOutStatus();
 
 console.log(historyOfEverything.isCheckedOut);
+
+historyOfEverything.addRating(4);
+
+historyOfEverything.addRating(5);
+
+historyOfEverything.addRating(5);
+
+console.log(historyOfEverything.ratings)
