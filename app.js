@@ -88,3 +88,19 @@ historyOfEverything.addRating(5); /* Make sure input is between 1-5 */
 console.log(historyOfEverything.ratings); 
 
 console.log(historyOfEverything.getAverageRating()); /* Round to 1 decimal place */
+
+const speed = new Movie('Jan de bont', 'Speed', 116);
+
+speed.toggleCheckOutStatus();
+
+console.log(speed.isCheckedOut);
+
+speed.addRating(0);
+
+speed.addRating(1);
+
+speed.addRating(1);
+
+speed.addRating(5);
+
+console.log(speed.getAverageRating());
