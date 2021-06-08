@@ -71,7 +71,7 @@ class Movie extends Media {
     }
   }
 
-/* Testing */
+/* Testing
 
 const historyOfEverything = new Book('Bill Bryson', 'A Short History of Nearly Everything', 544);
   
@@ -83,11 +83,11 @@ historyOfEverything.addRating(4);
 
 historyOfEverything.addRating(5);
 
-historyOfEverything.addRating(5); /* Make sure input is between 1-5 */
+historyOfEverything.addRating(5); // Make sure input is between 1-5
 
 console.log(historyOfEverything.ratings); 
 
-console.log(historyOfEverything.getAverageRating()); /* Round to 1 decimal place */
+console.log(historyOfEverything.getAverageRating()); // Round to 1 decimal place 
 
 const speed = new Movie('Jan de bont', 'Speed', 116);
 
@@ -103,4 +103,4 @@ speed.addRating(1);
 
 speed.addRating(5);
 
-console.log(speed.getAverageRating());
+console.log(speed.getAverageRating()); */
