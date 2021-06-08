@@ -24,7 +24,7 @@ class Media {
     getAverageRating() {
         let sum = this._ratings.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
         const n = this._ratings.length;
-        return sum/n;
+        return (sum/n).toFixed(1);
     }
 
     toggleCheckOutStatus() {
@@ -32,7 +32,10 @@ class Media {
     }
 
     addRating(newRating) {
-        this._ratings.push(newRating);
+        if ( newRating >= 1 && newRating <= 5) {
+            this._ratings.push(newRating);
+          } else { console.log('Please input rating between 1-5');
+        }
     }
 }
 
@@ -80,8 +83,8 @@ historyOfEverything.addRating(4);
 
 historyOfEverything.addRating(5);
 
-historyOfEverything.addRating(5);
+historyOfEverything.addRating(5); /* Make sure input is between 1-5 */
 
-console.log(historyOfEverything.ratings);
+console.log(historyOfEverything.ratings); 
 
-console.log(historyOfEverything.getAverageRating());
+console.log(historyOfEverything.getAverageRating()); /* Round to 1 decimal place */
