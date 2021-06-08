@@ -26,3 +26,12 @@ class Media {
         const n = this._ratings.length;
         return sum/n;
     }
+
+    toggleCheckOutStatus() {
+        this._isCheckedOut = !this._isCheckedOut;
+    }
+
+    addRating(newRating) {
+        this._ratings.push(newRating);
+    }
+}
